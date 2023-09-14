@@ -5,10 +5,18 @@ import Cart from "./components/Cart/Cart";
 
 function App() {
   const [selectedCourse, setSelectedCourse] = useState([]);
+  const [creditHour, setCreditHour] = useState(0);
+  const [remainingHour, setRemainingHour] = useState(20);
+
   const selectedCourseHandler = (course) => {
     const isExist = selectedCourse.find((item) => item.id == course.id);
+
     if (isExist) console.log("Already selected");
-    else setSelectedCourse([...selectedCourse, course]);
+    else {
+      setSelectedCourse([...selectedCourse, course]);
+      setCreditHour(creditHour + course.credit);
+      setRemainingHour(20 - creditHour - course.credit);
+    }
   };
 
   return (
@@ -18,7 +26,11 @@ function App() {
       </h1>
       <div className="flex justify-center gap-4">
         <Cards selectedCourseHandler={selectedCourseHandler} />
-        <Cart selectedCourse={selectedCourse} />
+        <Cart
+          selectedCourse={selectedCourse}
+          creditHour={creditHour}
+          remainingHour={remainingHour}
+        />
       </div>
     </div>
   );

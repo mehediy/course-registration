@@ -1,10 +1,10 @@
 import React from "react";
 
-const Cart = ({ selectedCourse }) => {
+const Cart = ({ selectedCourse, creditHour, remainingHour }) => {
   return (
     <div className="w-1/4 bg-white p-4 self-start rounded-lg flex flex-col gap-2">
       <h3 className="text-[#2F80ED] text-lg font-bold border-b-2 py-2">
-        Credit Hour Remaining: 1 hr
+        Credit Hour Remaining: {remainingHour} hr
       </h3>
       <div>
         <h3 className="text-xl font-bold">Course Name</h3>
@@ -15,7 +15,7 @@ const Cart = ({ selectedCourse }) => {
         </ol>
       </div>
       <h3 className="border-b-2 border-t-2 py-2 font-medium">
-        Total Credit Hour: 19
+        Total Credit Hour: {creditHour}
       </h3>
       <h3 className="font-semibold">Total Price: 100 USD</h3>
     </div>
