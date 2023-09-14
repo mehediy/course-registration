@@ -33,8 +33,8 @@
     },
     {
       "id": 5,
-      "title": "./src/assets/images/5.png",
-      "cover": "oop_python.jpg",
+      "title": "Introduction to OOP Python",
+      "cover": "./src/assets/images/5.png",
       "description": "Dive into Object-Oriented Programming with Python. Ideal for aspiring developers.",
       "price": 29.99,
       "credit": 6
