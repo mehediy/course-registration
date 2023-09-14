@@ -11,8 +11,6 @@ function App() {
     else setSelectedCourse([...selectedCourse, course]);
   };
 
-  console.log(selectedCourse);
-
   return (
     <div className="container mx-auto pb-14 px-2">
       <h1 className="text-center text-3xl font-bold py-6">
@@ -20,7 +18,7 @@ function App() {
       </h1>
       <div className="flex justify-center gap-4">
         <Cards selectedCourseHandler={selectedCourseHandler} />
-        <Cart />
+        <Cart selectedCourse={selectedCourse} />
       </div>
     </div>
   );
