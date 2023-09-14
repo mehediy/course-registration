@@ -2,7 +2,7 @@ import React from "react";
 import dollar from "../../assets/dollar.svg";
 import book from "../../assets/book.svg";
 
-const Card = ({ course }) => {
+const Card = ({ course, selectedCourseHandler }) => {
   const { id, cover, title, description, price, credit } = course;
   return (
     <div className="bg-white p-4 rounded-lg flex flex-col justify-between gap-4">
@@ -20,7 +20,10 @@ const Card = ({ course }) => {
             <img src={book} /> Credit: {credit} hr
           </span>
         </div>
-        <button className="bg-[#2F80ED] text-white font-semibold text-lg rounded-lg p-2">
+        <button
+          onClick={() => selectedCourseHandler(course)}
+          className="bg-[#2F80ED] text-white font-semibold text-lg rounded-lg p-2"
+        >
           Select
         </button>
       </div>
