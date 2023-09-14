@@ -4,7 +4,7 @@ import Cart from "./components/Cart/Cart";
 
 function App() {
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto pb-14 px-2">
       <h1 className="text-center text-3xl font-bold py-6">
         Course Registration
       </h1>
