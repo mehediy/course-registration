@@ -10,12 +10,17 @@ function App() {
 
   const selectedCourseHandler = (course) => {
     const isExist = selectedCourse.find((item) => item.id == course.id);
+    let currentCreditHour = creditHour + course.credit;
 
     if (isExist) console.log("Already selected");
     else {
-      setSelectedCourse([...selectedCourse, course]);
-      setCreditHour(creditHour + course.credit);
-      setRemainingHour(20 - creditHour - course.credit);
+      if (currentCreditHour > 20) {
+        console.log("Insufficient Remaining Credit Hours");
+      } else {
+        setSelectedCourse([...selectedCourse, course]);
+        setCreditHour(currentCreditHour);
+        setRemainingHour(20 - currentCreditHour);
+      }
     }
   };
 
