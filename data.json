@@ -2,7 +2,7 @@
     {
       "id": 1,
       "title": "Introduction to C Programming",
-      "cover": "./src/assets/images/1.png",
+      "cover": "https://i.ibb.co/zFqvqzV/1.png",
       "description": "Learn the fundamentals of C programming with practical examples. Perfect for beginners.",
       "price": 29.99,
       "credit": 3
@@ -10,7 +10,7 @@
     {
       "id": 2,
       "title": "Introduction to Algorithms",
-      "cover": "./src/assets/images/2.png",
+      "cover": "https://i.ibb.co/qD3dXRz/2.png",
       "description": "Master the basics of algorithm design and analysis. Essential for computer science enthusiasts.",
       "price": 34.99,
       "credit": 4
@@ -18,7 +18,7 @@
     {
       "id": 3,
       "title": "Introduction to C++ for DSA",
-      "cover": "./src/assets/images/3.png",
+      "cover": "https://i.ibb.co/Rh5yjX2/3.png",
       "description": "Explore C++ programming specifically tailored for Data Structures and Algorithms.",
       "price": 39.99,
       "credit": 10
@@ -26,7 +26,7 @@
     {
       "id": 4,
       "title": "Basic Data Structures",
-      "cover": "./src/assets/images/4.png",
+      "cover": "https://i.ibb.co/LrcXbNH/4.png",
       "description": "Build a solid foundation in common data structures like arrays, linked lists, and stacks.",
       "price": 27.99,
       "credit": 13
@@ -34,7 +34,7 @@
     {
       "id": 5,
       "title": "Introduction to OOP Python",
-      "cover": "./src/assets/images/5.png",
+      "cover": "https://i.ibb.co/xqTJr3N/5.png",
       "description": "Dive into Object-Oriented Programming with Python. Ideal for aspiring developers.",
       "price": 29.99,
       "credit": 6
@@ -42,7 +42,7 @@
     {
       "id": 6,
       "title": "Software Engineering",
-      "cover": "./src/assets/images/6.png",
+      "cover": "https://i.ibb.co/WKTzLVM/6.png",
       "description": "Learn the principles of software engineering, including design and development methodologies.",
       "price": 44.99,
       "credit": 12
@@ -50,7 +50,7 @@
     {
       "id": 7,
       "title": "AWS Cloud Computing",
-      "cover": "./src/assets/images/7.png",
+      "cover": "https://i.ibb.co/YD82zMR/7.png",
       "description": "Discover the world of AWS cloud services and how to deploy and manage applications.",
       "price": 49.99,
       "credit": 5
@@ -58,7 +58,7 @@
     {
       "id": 8,
       "title": "Database (MySQL)",
-      "cover": "./src/assets/images/8.png",
+      "cover": "https://i.ibb.co/pW8XwpY/8.png",
       "description": "Master MySQL database management, from creating tables to complex queries.",
       "price": 34.99,
       "credit": 7
@@ -66,7 +66,7 @@
     {
       "id": 9,
       "title": "Problem-Solving Part",
-      "cover": "./src/assets/images/9.png",
+      "cover": "https://i.ibb.co/QbYtbQz/9.png",
       "description": "Enhance your problem-solving skills with real-world examples and practice exercises.",
       "price": 19.99,
       "credit": 9
