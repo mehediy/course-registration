@@ -1,8 +1,21 @@
-# React + Vite
+# Course Registration
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project features
 
-Currently, two official plugins are available:
+- Select courses
+- Credit hour calculation
+- Total price calculation
+- Course selection is limited to 20 hours of total credit
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## How I managed state in the project
+
+I have used useState hook four times for different reason.
+
+- To store the fetched data in a variable, I have used a state variable `courses`. It is in the `Cards` component. Using the data from `courses`, different `Card` is displayed.
+- In the `App` component, there are three states.
+
+  - `selectedCourse` : When `Select` button is clicked on a card, a function is called. The function adds the Card data in this state in the form of array. Before adding, some conditions are checked: if the clicked course is not already added, also if the credit hour does not exceed.
+  - `creditHour` : Calculate total credit hour using selected course data and store it in the state.
+  - `remainingHour` : Remaining hour is calculated and stored in the state.
+
+  These three state data are passed to the `Cart` component and used there.
